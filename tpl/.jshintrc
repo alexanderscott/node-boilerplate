@@ -1,0 +1,18 @@
+{
+    "node": true,
+    "globals": {
+        "describe": true,
+        "after": true,
+        "afterEach": true,
+        "before": true,
+        "beforeEach": true,
+        "it": true,
+        "should": true,
+        "console": true
+    }
+    "es5": true,
+    "browser": true,
+    "eqeqeq": true,
+    "undef": true,
+    "strict": true
+}
