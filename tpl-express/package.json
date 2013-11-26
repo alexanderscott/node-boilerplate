@@ -11,6 +11,7 @@
   "author": "PROJECT_AUTHOR_NAME <PROJECT_AUTHOR_EMAIL> (PROJECT_AUTHOR_WEBSITE)",
   "dependencies": {
     "underscore": "~1.5.2",
+    "express": "~3.4.4",
     "winston": "~0.7.2",
     "async": "~0.2.9"
   },
@@ -33,3 +34,4 @@
     }
   ]
 }
+
