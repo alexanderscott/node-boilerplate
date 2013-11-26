@@ -1,3 +1,5 @@
+"use strict";
+
 var assert = require('assert'),
     fs = require('fs'),
     config = require('../config/' + (process.env.NODE_ENV || 'development'),

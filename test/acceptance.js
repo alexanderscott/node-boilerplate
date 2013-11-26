@@ -1,3 +1,5 @@
+"use strict";
+
 var assert = require('assert'),
     fs = require('fs'),
     nodeBoilerplate = require('../lib/node-boilerplate');
@@ -14,7 +16,7 @@ describe('node-boilerplate', function(){
 
     afterEach(function(cb){
         if( ! fs.existsDirSync('./test-project') ) {
-            fs.removeDirSync('./test-project');
+            fs.rmdirSync('./test-project');
         }
         cb();
     });

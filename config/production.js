@@ -1,3 +1,5 @@
+"use strict";
+
 var defaultConfig = require('./default'),
     winston = require('./winston'),
     _ = require('underscore');

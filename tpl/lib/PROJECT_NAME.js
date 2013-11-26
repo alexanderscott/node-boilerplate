@@ -1,3 +1,5 @@
+"use strict";
+
 var config = require('./config/' + (process.env.NODE_ENV || 'development'),
     fs = require('fs'),
     util = require('util'),
