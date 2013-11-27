@@ -10,13 +10,11 @@
   "private": false,
   "author": "Alex Ehrnschwender <alex@crunchdevelopment.com> (http://alexehrnschwender.com)",
   "dependencies": {
-    "commander": "~2.0.0",
     "underscore": "~1.5.2",
     "winston": "~0.7.2",
     "async": "~0.2.9",
     "iniparser": "~1.0.5",
-    "file": "~0.2.1",
-    "ncp": "~0.4.2"
+    "wrench": "~1.5.4"
   },
   "devDependencies": {
     "supertest": "0.5.x",
