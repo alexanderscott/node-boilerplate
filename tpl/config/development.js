@@ -1,7 +1,7 @@
 "use strict";
 
 var defaultConfig = require('./default'),
-    winston = require('./winston'),
+    winston = require('winston'),
     _ = require('underscore');
 
 // For NODE_ENV=development
