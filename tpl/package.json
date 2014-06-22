@@ -2,7 +2,7 @@
   "name": "PROJECT_NAME",
   "keywords": "",
   "description": "",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "repository": {
     "type": "git",
     "url": "https://github.com/PROJECT_AUTHOR_GITHUB/PROJECT_NAME.git"
@@ -15,16 +15,26 @@
     "async": "~0.2.9"
   },
   "devDependencies": {
-    "supertest": "0.5.x",
-    "mocha": "1.8.x",
-    "should": "1.2.x"
+    "blanket": "~1.1.6",
+    "grunt": "~0.4.0",
+    "grunt-cli": "~0.1.13",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-jsdoc": "~0.5.6",
+    "grunt-mocha-test": "~0.11.0",
+    "mocha": "~1.14.0"
   },
   "engines": {
-    "node": ">= 0.8.0"
+    "node": ">= 0.10.0"
   },
   "main": "index",
   "bin" : {
       "PROJECT_NAME" : "./bin/PROJECT_NAME"
+  },
+  "scripts":{
+    "build": "grunt build",
+    "test": "grunt test",
+    "doc": "grunt doc",
+    "lint": "grunt lint"
   },
   "licenses": [
     {

@@ -8,7 +8,7 @@
     "url": "https://github.com/alexanderscott/node-boilerplate.git"
   },
   "private": false,
-  "author": "Alex Ehrnschwender <alex@crunchdevelopment.com> (http://alexehrnschwender.com)",
+  "author": "Alex Ehrnschwender <alexanderscott46@gmail.com> (http://alexehrnschwender.com)",
   "dependencies": {
     "underscore": "~1.5.2",
     "winston": "~0.7.2",
@@ -26,7 +26,13 @@
   },
   "main": "index",
   "bin": {
-    "iconerator": "./bin/node-boilerplate"
+    "": "./bin/"
+  },
+  "scripts":{
+    "build": "grunt build",
+    "test": "grunt test",
+    "doc": "grunt doc",
+    "lint": "grunt lint"
   },
   "licenses": [
     {
