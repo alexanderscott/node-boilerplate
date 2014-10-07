@@ -1,14 +1,14 @@
 {
   "name": "PROJECT_NAME",
   "keywords": "",
-  "description": "",
+  "description": "PROJECT_DESCRIPTION",
   "version": "0.1.1",
   "repository": {
     "type": "git",
     "url": "https://github.com/PROJECT_AUTHOR_GITHUB/PROJECT_NAME.git"
   },
   "private": false,
-  "author": "PROJECT_AUTHOR_NAME <PROJECT_AUTHOR_EMAIL> (PROJECT_AUTHOR_WEBSITE)",
+  "author": "PROJECT_AUTHOR_NAME <PROJECT_AUTHOR_EMAIL> (PROJECT_AUTHOR_SITE)",
   "dependencies": {
     "underscore": "~1.5.2",
     "winston": "~0.7.2",
@@ -39,7 +39,7 @@
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/PROJECT_AUTHOR_GITHUB/POJECT_NAME/raw/master/LICENSE"
+      "url": "https://github.com/PROJECT_AUTHOR_GITHUB/PROJECT_NAME/raw/master/LICENSE"
     }
   ]
 }

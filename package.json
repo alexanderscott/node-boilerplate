@@ -2,7 +2,7 @@
   "name": "node-boilerplate",
   "keywords": "node, nodejs, node.js, boilerplate",
   "description": "Boilerplate node.js project generator",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "repository": {
     "type": "git",
     "url": "https://github.com/alexanderscott/node-boilerplate.git"
@@ -22,7 +22,7 @@
     "should": "1.2.x"
   },
   "engines": {
-    "node": ">= 0.8.0"
+    "node": ">= 0.10.0"
   },
   "main": "index",
   "bin": {

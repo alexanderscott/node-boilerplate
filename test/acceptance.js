@@ -2,7 +2,8 @@
 
 var assert = require('assert'),
     fs = require('fs'),
-    nodeBoilerplate = require('../lib/node-boilerplate');
+    path = require('path');
+    //nodeBoilerplate = require('../lib/node-boilerplate');
 
 
 describe('node-boilerplate', function(){
@@ -15,9 +16,6 @@ describe('node-boilerplate', function(){
     });
 
     afterEach(function(cb){
-        if( ! fs.existsDirSync('./test-project') ) {
-            fs.rmdirSync('./test-project');
-        }
         cb();
     });
 
@@ -28,28 +26,21 @@ describe('node-boilerplate', function(){
     describe('generate', function(){
         
         it('can generate a boilerplate test project with default options', function(cb){
-            var cp = require('child_process').spawn('node', ['../lib/node-boilerplate', './test-project']);
+            this.timeout(10000);
+            var binPath = path.resolve(__dirname, "../bin/node-boilerplate");
+            var libPath = path.resolve(__dirname, "../lib/node-boilerplate");
+            var testProjPath = path.resolve(__dirname, "./test-project");
+            var cp = require('child_process').spawn("node", [libPath, testProjPath]);
 
-            cp.on('err', cb);
-            cp.on('end', function(){
-                assert.ok( fs.existsDirSync('./test-project') );
-                assert.ok( fs.existsFileSync('./test-project/package.json') );
-                assert.ok( fs.existsFileSync('./test-project/lib/test-project.js') );
-                var testPackage = require('./test/project/package.json');
+            cp.on('close', function(){
+                assert.ok( fs.existsSync( path.resolve(__dirname, './test-project') ));
+                assert.ok( fs.existsSync(path.resolve(__dirname, './test-project/package.json') ));
+                assert.ok( fs.existsSync( path.resolve(__dirname, './test-project/lib/test-project.js') ));
+                var testPackage = require( path.resolve(__dirname, './test-project/package.json'));
                 assert.ok( testPackage.name === 'test-project' );
-
+                cb();
             });
 
         });
-
-        it('cannot generate a boilerplate project without a path or project name', function(cb){
-            assert.throws( function(){
-                var cp = require('child_process').spawn('node', ['../lib/node-boilerplate']);
-
-            }, Error);
-        });
-
     });
-
-
 });

@@ -1,9 +1,9 @@
-node-boilerplate
+node-boilerplate  [![Build Status](https://secure.travis-ci.org/alexanderscott/node-boilerplate.png)](http://travis-ci.org/alexanderscott/node-boilerplate)
 ================
+Boilerplate node.js project generator.
 
-Boilerplate node.js project generator
 
-[![Build Status](https://secure.travis-ci.org/alexanderscott/node-boilerplate.png)](http://travis-ci.org/alexanderscott/node-boilerplate)
+[![NPM](https://nodei.co/npm/node-boilerplate.png?downloads=true)](https://nodei.co/npm/node-boilerplate/)
 
 ## Install
     
@@ -23,7 +23,7 @@ Boilerplate node.js project generator
 
 The MIT License (MIT)
 
-Copyright (c) 2013 Alex Ehrnschwender
+Copyright (c) 2013-2014 Alex Ehrnschwender (alexehrnschwender.com)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
